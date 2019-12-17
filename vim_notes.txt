@@ -1,5 +1,23 @@
 VIM NOTES
 
+
+Modes
+
+	The "Vi's modes" is the key feature of Vi, if you're using Vim or other derivative the current mode is indicated
+	into the lower-left corner of the terminal.
+
+	Pressing ESCAPE from every mode exept NORMAL will cause the return to NORMAL mode, is the only way to exit from INSERT mode 
+
+
+		NORMAL		The standard mode, here you can navigate trought the text and use commands
+
+		INSERT		The insert mode, you can toggle it using a variety of different metods, used for actual typing
+
+		VISUAL		The visual mode, permit text selection, useful for multi-line action like yank or cut
+
+		REPLACE		The replace mode, permit to overwrite text
+
+
 Movement
 
 		h			left
@@ -49,18 +67,24 @@ General command
 		I			toggle insert mode at the beginning of the row
 		o			open a new line below the selected one and toggle insert mode
 		O			opern a new line over the selected one and toggle insert mode
+		v			toggle visual mode
+		V			toggle visual mode and select the entire row
+		r			toggle replace mode
+		R			toggle replace mode for more than one char
 		S			toggle insert mode one tab after the selected poin
+
 		:show		show the current mode
 
 
 Saving, exit and so on
-
 
 		:wa			writes all changes to the respective files
 		:xa			save all files and then quit
 		:wqa		same as before
 		:qa			quit all (fails if there's any unsaved file)
 		:qa!		quit all (forced)
+
+
 Split
 
 	General
@@ -76,7 +100,7 @@ Split
 
 Tabs
 
-	vim -p file1 file2 file3		open the N files into N different tabs
+	vim -p file1 file2 file3		(from text interface) open the N files into N different tabs
 
 	Creation/Managment
 
@@ -91,9 +115,7 @@ Tabs
 		:tab drop {file}			open {file} in a new tab, or jump to a window/tab containing the file if there is one
 		:tab split					copy the current window to a new tab of its own
 
-
-
-	Navigation
+	Moving tabs around
 
 		:tabs						list all tabs including their displayed windows
 		:tabm 0						move current tab to first
@@ -105,8 +127,7 @@ Tabs
 		:tabfirst					go to first tab
 		:tablast					go to last tab
 
-
-		In Normal mode:
+	Navigation
 
 			gt					go to next tab
 			gT					go to previous tab
@@ -128,9 +149,13 @@ Sessions
 		:source	{path/to/file.vim}				load a Vim script that contains the sessions data
 
 
+Scripting
 
+	Creation
 
+		Just write a script using Vi's scripting language and save it as a .vim file
 
+	Load
 
-CREDIT TO:
-	github.com/ErreKappa1
+		:source {path/to/file.vim}				load a Vim script
+
