@@ -76,6 +76,42 @@ General command
 		:show		show the current mode
 
 
+Regex
+	
+	General
+
+		pattern					just the pattern, even if is only a portion of a bigger string
+		pattern (with spaces)	the pattern isolated from the rest of the text
+		$						last char of a row
+		^						first char of a row
+		\< \>					an indefinite number of chars
+		[]						any char from the group between the two brackets
+		.						any char except newline
+
+	Escaped
+
+		\s						whitespace
+		\S						non-whitespace
+		\d						digit
+		\D						non-digit
+		\x						hex digit
+		\X						non-hex digit
+		\o						octal digit
+		\O						non-octal digit
+		\h						head of word (a,b,c...,A,B,C,...,_)
+		\H						non-head of word
+		\p						printable chars
+		\P						printable chars excluding digits
+		\w						word char
+		\W						non-word character
+		\a						alphabetic char
+		\A						non-alphabetic char
+		\l						lowercase char
+		\L						non-lowercase char
+		\u						uppercase char
+		\U						non-uppercase char
+
+
 Saving, exit and so on
 
 		:wa			writes all changes to the respective files
@@ -83,6 +119,34 @@ Saving, exit and so on
 		:wqa		same as before
 		:qa			quit all (fails if there's any unsaved file)
 		:qa!		quit all (forced)
+
+
+Search and Sobstitute
+
+		:Range s/PATTERN/STRING/Option
+
+			Option
+
+				c	confirm before each substitution
+				g	replace multiple occurrences of PATTERN per line (else it replace only the first)
+				i	ignore case
+				I	don't case sensitive
+
+			Range (manage where the command will apply)
+
+				number		absolute number of the row
+				.			current line
+				$			the last line in the  file
+				%			the whole file
+				\/			the next line where the last searched pattern was
+				\?			the previously line where the last searched pattern was
+				\&			the next line where the last substituted pattern was
+
+			NB: A range can be specified by a sequence of two parameters divided by a comma (Es		1,4		.,$)
+
+			Pattern
+
+				follows the standard vim regex rules
 
 
 Split
