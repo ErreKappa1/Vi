@@ -158,8 +158,11 @@ Split
 
 	Movement
 
-		ctrl+w+k	go up to the next splitted region
+		ctrl+w+h	go left to the next splitted region
 		ctrl+w+j	go down to the next splitted region
+		ctrl+w+k	go up to the next splitted region
+		ctrl+w+l	go right to the next splitted region
+		ctrl+ww		cycle trought the different splitted regions
 
 
 Tabs
@@ -199,7 +202,7 @@ Tabs
 			ctrl+PgDn			go to next tab
 			ctrl+PgUp			go to previous tab
 
-	NB: tabe==tabedit, if the command can be a primary key is ok
+	NB: tabe==tabedit, if the typed string is univoce works as the maching command
 
 
 Sessions
