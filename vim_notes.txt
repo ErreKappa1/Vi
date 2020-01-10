@@ -156,6 +156,13 @@ Split
 		:split		split the tab horizzontally with the selected file, use the same file if no argument is given
 		:vsplit		split the tab vertically with the selected file, use the same file if no argument is given
 
+	Resize
+
+		:resize nRow			resize a splitted panel to the selected number of row
+		:vertical resize nRow	resize a vertical splitted panel to the selected number of row
+		:resize +-nRow			resize a splitted panel by the selected number of row
+		:vertical resize +-nRow	resize a vertical splitted panel by the selected number of row
+
 	Movement
 
 		ctrl+w+h	go left to the next splitted region
