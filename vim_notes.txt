@@ -34,6 +34,7 @@ Movement
 		(			to the previous sentence
 		}			to the next paragraph
 		{			to the previous paragraph
+		$			go to the end of a row
 		gg			go to the beginning of the file
 		G			go to the end of the file
 		0			go to the beginning of a row
@@ -55,23 +56,22 @@ General command
 		p			paste
 		P			paste over the selected row
 		x			delete one char on the right
-		$			go to the end of a row
-		^			go to the start of a row
 		u			undo
 		ctrl+r		undo the undo
 		U			undo command
 		UU			undo the undo command
 		a			append one char the the right and toggle insert mode
 		A			append at the row and toggle insert mode
+		o			create a new line below the selected one and toggle insert mode
+		O			create a new line over the selected one and toggle insert mode
 		i			toggle insert mode
 		I			toggle insert mode at the beginning of the row
-		o			open a new line below the selected one and toggle insert mode
-		O			opern a new line over the selected one and toggle insert mode
 		v			toggle visual mode
 		V			toggle visual mode and select the entire row
 		r			toggle replace mode
 		R			toggle replace mode for more than one char
-		S			toggle insert mode one tab after the selected poin
+		s			toggle insert mode on the selcted char erasing it
+		S			toggle insert mode one tab after the beginning of the row, erasing the current row
 
 		:show		show the current mode
 
@@ -216,7 +216,7 @@ Sessions
 
 	Creation
 
-		:mksession {path/to/file.vim}			create a new session into the specified path
+		:mksession {path/to/file.vim}			create a vim script that contains the current session
 
 	Load
 
