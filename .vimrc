@@ -5,12 +5,13 @@ set softtabstop=4
 set shiftwidth=4
 set noexpandtab
 set colorcolumn=120
+set autoindent
 packadd termdebug
 highlight ColorColumn ctermbg=lightgray
 set mouse=a
 if has('gui_running')
 	colorscheme slate
-	set guifont=Hack\ 12
+	set guifont=Hack\ 11
 endif
 augroup project
 	autocmd!
