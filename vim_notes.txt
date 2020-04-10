@@ -114,11 +114,13 @@ Regex
 
 Saving, exit and so on
 
-		:wa			writes all changes to the respective files
-		:xa			save all files and then quit
-		:wqa		same as before
-		:qa			quit all (fails if there's any unsaved file)
-		:qa!		quit all (forced)
+		:wa						writes all changes to the respective files
+		:xa						save all files and then quit
+		:wqa					same as before
+		:qa						quit all (fails if there's any unsaved file)
+		:qa!					quit all (forced)
+		:! [shell cmd]			redirect the command to the shell, displayng the output
+		:!r [shell cmd]			redirect the command to the shell, writing the output on the file
 
 
 Search and Sobstitute
