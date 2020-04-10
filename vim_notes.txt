@@ -119,8 +119,8 @@ Saving, exit and so on
 		:wqa					same as before
 		:qa						quit all (fails if there's any unsaved file)
 		:qa!					quit all (forced)
-		:! [shell cmd]			redirect the command to the shell, displayng the output
-		:!r [shell cmd]			redirect the command to the shell, writing the output on the file
+		:! {shell cmd}			redirect the command to the shell, displayng the output
+		:!r {shell cmd}			redirect the command to the shell, writing the output on the file
 
 
 Search and Sobstitute
