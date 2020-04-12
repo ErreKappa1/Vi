@@ -119,8 +119,10 @@ Saving, exit and so on
 		:wqa					same as before
 		:qa						quit all (fails if there's any unsaved file)
 		:qa!					quit all (forced)
-		:! {shell cmd}			redirect the command to the shell, displayng the output
-		:!r {shell cmd}			redirect the command to the shell, writing the output on the file
+		:n						edit the alternate file
+		:e [file/number]		edit the selected file / edit the alternate file corresponding to the number
+		:! [shell cmd]			redirect the command to the shell, displayng the output
+		:!r [shell cmd]			redirect the command to the shell, writing the output on the file
 
 
 Search and Sobstitute
@@ -160,10 +162,10 @@ Split
 
 	Resize
 
-		:resize nRow			resize a splitted panel to the selected number of row
-		:vertical resize nRow	resize a vertical splitted panel to the selected number of row
-		:resize +-nRow			resize a splitted panel by the selected number of row
-		:vertical resize +-nRow	resize a vertical splitted panel by the selected number of row
+		:resize [nRow]			resize a splitted panel to the selected number of row
+		:vertical resize [nRow]	resize a vertical splitted panel to the selected number of row
+		:resize [+-][nRow]			resize a splitted panel by the selected number of row
+		:vertical resize [+-][nRow]	resize a vertical splitted panel by the selected number of row
 
 	Movement
 
@@ -180,15 +182,15 @@ Tabs
 
 	Creation/Managment
 
-		:tabedit {file}				edit specified file in a new tab
-		:tabfind {file}				open a new tab with filename given, searching the 'path' to find it
+		:tabedit [file]				edit specified file in a new tab
+		:tabfind [file]				open a new tab with filename given, searching the 'path' to find it
 		:tabclose					close current tab
-		:tabclose {i}				close i-th tab
+		:tabclose [i]				close i-th tab
 		:tabonly					close all other tabs (show only the current tab)
 
 		:tab ball					show each buffer in a tab (up to 'tabpagemax' tabs)
 		:tab help					open a new help window in its own tab page
-		:tab drop {file}			open {file} in a new tab, or jump to a window/tab containing the file if there is one
+		:tab drop [file]			open {file} in a new tab, or jump to a window/tab containing the file if there is one
 		:tab split					copy the current window to a new tab of its own
 
 	Moving tabs around
@@ -196,7 +198,7 @@ Tabs
 		:tabs						list all tabs including their displayed windows
 		:tabm 0						move current tab to first
 		:tabm						move current tab to last
-		:tabm {i}					move current tab to position i+1
+		:tabm [i]					move current tab to position i+1
 
 		:tabn						go to next tab
 		:tabp						go to previous tab
@@ -207,7 +209,7 @@ Tabs
 
 			gt					go to next tab
 			gT					go to previous tab
-			{i}gt				go to tab in position i
+			[i]gt				go to tab in position i
 			ctrl+PgDn			go to next tab
 			ctrl+PgUp			go to previous tab
 
@@ -218,11 +220,11 @@ Sessions
 
 	Creation
 
-		:mksession {path/to/file.vim}			create a vim script that contains the current session
+		:mksession [path/to/file.vim]			create a vim script that contains the current session
 
 	Load
 
-		:source	{path/to/file.vim}				load a Vim script that contains the sessions data
+		:source	[path/to/file.vim]				load a Vim script that contains the sessions data
 
 
 Scripting
@@ -233,5 +235,5 @@ Scripting
 
 	Load
 
-		:source {path/to/file.vim}				load a Vim script
+		:source [path/to/file.vim]				load a Vim script
 
