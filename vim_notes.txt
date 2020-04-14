@@ -42,6 +42,7 @@ Movement
 		H			go to the top of the screen
 		M			go to the middle of the screen
 		L			go to the bottom of the screen
+		%			jumps between the selected pair of parenthesis
 		``			return to the previous cursor position where he was before the last jump
 		''			return to the previous line where the cursor was before the last jump
 		'.			return to the beginning (excluding spaces and tabs) of the last edited line
