@@ -17,64 +17,99 @@ Modes
 
 		REPLACE		The replace mode, permit to overwrite text
 
+		EX			The ex mode, you can type vim :commands to do a variety of things
+
 
 Movement
 
+		``			return to the previous cursor position where he was before the last jump
+		#			to the previous maching WORD
+		$			to the end of a row
+		%			to the next maching char
+		^			to the first not-blank char of a row
+		*			to the next maching WORD
+		(			to the previous sentence
+		)			to the next sentence
+		0			to the first character of a row (spaces, tabs)
+		-			to the previous line
+		+			to the next line
+		W			to the beginning of the next WORD (sequence of chars without spaces)
+		w			to the beginning of the next WORD
+		E			to the end of the next WORD (sequence of chars without spaces)
+		e			to the end of the next WORD
+		{			to the previous paragraph
+		}			to the next paragraph
+		G			to the end of the file
+		gg			to the beginning of the file
+		gf			open file under the cursor
+		H			to the top of the screen
 		h			left
-		l			right
 		j			down
 		k			up
-		b			one word backword
-		B			backword till next space
-		w			to the beginning of the next word
-		W			to the beginning of the next WORD (sequence of chars without spaces)
-		e			to the end of the next word
-		E			to the end of the next WORD (sequence of chars without spaces)
-		)			to the next sentence
-		(			to the previous sentence
-		}			to the next paragraph
-		{			to the previous paragraph
-		$			go to the end of a row
-		gg			go to the beginning of the file
-		G			go to the end of the file
-		0			go to the beginning of a row
-		^			go to the first not-blank char of a row (spaces, tabs)
-		H			go to the top of the screen
-		M			go to the middle of the screen
-		L			go to the bottom of the screen
-		%			jumps between the selected pair of parenthesis
-		``			return to the previous cursor position where he was before the last jump
+		L			to the bottom of the screen
+		l			right
 		''			return to the previous line where the cursor was before the last jump
 		'.			return to the beginning (excluding spaces and tabs) of the last edited line
+		B			backword till next space
+		b			one WORD backword
+		N			to the previous WORD (find)
+		n			to the next WORD (find)
+		M			to the middle of the screen
+		?			find the previous WORD
+		/			find the next WORD
 
 
-General command
+Commands
 
-		d			cut selected
-		D			cut single char
-		dd			cut row
-		c			cut selected and then toggle insert mode
-		p			paste
-		P			paste over the selected row
-		x			delete one char on the right
-		u			undo
-		ctrl+r		undo the undo
-		U			undo command
+		~			invert the case of the current char
+		@			play recorded macro
+		=			auto indent																					*
+		Q			ex mode
+		q			record a new macro
+		R			toggle replace mode
+		r			replace the current char
+		Y			yank line
+		y			yank																						*
 		UU			undo the undo command
-		a			append one char the the right and toggle insert mode
-		A			append at the row and toggle insert mode
-		o			create a new line below the selected one and toggle insert mode
-		O			create a new line over the selected one and toggle insert mode
-		i			toggle insert mode
+		U			undo command
+		u			undo
 		I			toggle insert mode at the beginning of the row
-		v			toggle visual mode
+		i			toggle insert mode
+		O			create a new line over the selected one and toggle insert mode
+		o			create a new line below the selected one and toggle insert mode
+		P			paste before
+		p			paste after
+		A			append at the end of the row and toggle insert mode
+		a			append one char right and toggle insert mode
+		S			erase the current row and toggle insert mode one tab after the beginning of the line
+		s			erase the current char and toggle insert mode
+		D			cut single char
+		d			cut selected																				*
+		J			join the current row with the nexto one
+		K			display the help for the selected WORD
+		:			toggle the ex command line
+		c			cut selected and then toggle insert mode
+		X			delete one char on the left
+		x			delete one char on the right
+		C			delete the current row from the current char to the last and toggle insert mode
+		c			delete the selected portion of the row and toggle insert mode
 		V			toggle visual mode and select the entire row
-		r			toggle replace mode
-		R			toggle replace mode for more than one char
-		s			toggle insert mode on the selcted char erasing it
-		S			toggle insert mode one tab after the beginning of the row, erasing the current row
+		v			toggle visual mode
+		m			set a marker (it can be accessed using "``")
+		<			unindent																					*
+		>			indnt																						*
+		.			repeat the last command
+		ctrl+r		redo
+		ctrl+f		page up
+		ctrl+b		page down
+		ctrl+e		line up
+		ctrl+y		linde down
+		ctrl+v		visual block
 
 		:show		show the current mode
+
+
+		NB:	Duplicate a command from the list marked with an "*" has the same meaning of use the same command on the all line
 
 
 Regex
@@ -113,7 +148,7 @@ Regex
 		\U						non-uppercase char
 
 
-Saving, exit and so on
+Saving, exit and so on (ex mode or command line)
 
 		:wa						writes all changes to the respective files
 		:xa						save all files and then quit
