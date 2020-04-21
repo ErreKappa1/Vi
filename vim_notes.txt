@@ -20,6 +20,7 @@ Modes
 		EX			The ex mode, you can type vim :commands to do a variety of things
 
 
+
 Movement
 
 		``			return to the previous cursor position where he was before the last jump
@@ -105,6 +106,7 @@ Commands
 		ctrl+e		line up
 		ctrl+y		linde down
 		ctrl+v		visual block
+		ctrl+O		go back (this applies to buffers, tag and so on)
 
 		:show		show the current mode
 
