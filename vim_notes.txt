@@ -24,7 +24,7 @@ Modes
 Movement
 
 		``			return to the previous cursor position where he was before the last jump
-		#			to the previous maching WORD
+		#			to the previous maching WORD (sequence of chars without spaces)
 		$			to the end of a row
 		%			to the next maching char
 		^			to the first not-blank char of a row
@@ -34,9 +34,9 @@ Movement
 		0			to the first character of a row (spaces, tabs)
 		-			to the previous line
 		+			to the next line
-		W			to the beginning of the next WORD (sequence of chars without spaces)
+		W			to the beginning of the next WORD
 		w			to the beginning of the next WORD
-		E			to the end of the next WORD (sequence of chars without spaces)
+		E			to the end of the next WORD
 		e			to the end of the next WORD
 		{			to the previous paragraph
 		}			to the next paragraph
@@ -52,7 +52,7 @@ Movement
 		''			return to the previous line where the cursor was before the last jump
 		'.			return to the beginning (excluding spaces and tabs) of the last edited line
 		B			backword till next space
-		b			one WORD backword
+		b			to the beginning of the current word
 		N			to the previous WORD (find)
 		n			to the next WORD (find)
 		M			to the middle of the screen
