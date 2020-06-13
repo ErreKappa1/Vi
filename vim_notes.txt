@@ -163,16 +163,9 @@ Saving, exit and so on (ex mode or command line)
 		:!r [shell cmd]			redirect the command to the shell, writing the output on the file
 
 
-Search and Sobstitute
+Search and Substitute
 
-		:Range s/PATTERN/STRING/Option
-
-			Option
-
-				c	confirm before each substitution
-				g	replace multiple occurrences of PATTERN per line (else it replace only the first)
-				i	ignore case
-				I	don't case sensitive
+		:Range s/Pattern/String/Option
 
 			Range (manage where the command will apply)
 
@@ -189,6 +182,18 @@ Search and Sobstitute
 			Pattern
 
 				follows the standard vim regex rules
+
+			String
+
+				the string that will be substituted
+
+			Option
+
+				c	confirm before each substitution
+				g	replace multiple occurrences of PATTERN per line (else it replace only the first)
+				i	ignore case
+				I	don't case sensitive
+
 
 
 Split
@@ -267,11 +272,53 @@ Sessions
 
 Scripting
 
-	Creation
+	Create
 
 		Just write a script using Vi's scripting language and save it as a .vim file
 
-	Load
+	Run
 
-		:source [path/to/file.vim]				load a Vim script
+		:source [path/to/file.vim]				run a Vim script
+
+	Mapping
+
+		:Mode Attribute Lhs Rhs
+
+		Modes
+
+			:map										recursive binding, every mode find more using :help recursive_mapping
+			:nmap										recursive binding, normal mode
+			:imap										recursive binding, insert mode
+			:vmap										recursive binding, visual and select mode
+			:xmap										recursive binding, visual mode
+			:smap										recursive binding, select mode
+			:cmap										recursive binding, cmdLin mode
+			:omap										recursive binding, pendOp mode
+			:noremap									non-recursive binding, every mode
+			:nnoremap									non-recursive binding, normal mode
+			:inoremap									non-recursive binding, insert mode
+			:vnoremap									non-recursive binding, visual and select mode
+			:xnoremap									non-recursive binding, visual mode
+			:snoremap									non-recursive binding, select mode
+			:cnoremap									non-recursive binding, cmdLin mode
+			:onoremap									non-recursive binding, pendOp mode
+
+		Attribute
+
+			is optional and composed by one or more of the following:
+
+			<buffer>
+			<silent>
+		    <expr>
+			<script>
+			<unique>
+			<special>
+
+		Lhs
+
+			is a sequence of one or more keys that you will use in your new shortcut
+
+		Rhs
+
+			is the sequence of keys that the Lhs shortcut keys will execute when entered in the selected mode
 
