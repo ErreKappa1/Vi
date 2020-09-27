@@ -1,5 +1,6 @@
 "Generic settigns
 syntax on
+filetype plugin indent on
 set number
 set tabstop=4
 set softtabstop=4
@@ -7,8 +8,17 @@ set shiftwidth=4
 set noexpandtab
 set colorcolumn=120
 set autoindent
+set smartindent
+set incsearch
+set hlsearch
 highlight ColorColumn ctermbg=lightgray
 set mouse=a
+
+"Set runtime path and vimrc path
+let $RTP=split(&runtimepath, ',')[0]
+let $RC="$HOME/.vim/vimrc"
+	"Also set the current project path as default
+	set path =.,**
 
 "GUI Settings
 if has('gui_running')
@@ -19,11 +29,6 @@ if has('gui_running')
 endif
 
 "Project settings (Mostly based on C projects)
-augroup project
-	autocmd!
-	autocmd BufRead,BufNewFile *.h,*.c set filetype=c
-augroup END
-set cin!
 
 "Addedd packages
 packadd termdebug
