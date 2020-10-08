@@ -1,16 +1,19 @@
 " Vim filetype plugin file
-" Language:		C
+" Language:		C++
 " Maintainer:	ErreKappa1
 " Last Changed: 23/09/2020
 
 augroup project
 	autocmd!
-	autocmd BufRead,BufNewFile *.h,*.c set filetype=c
+	autocmd BufRead,BufNewFile *.h,*.cpp set filetype=cpp
 augroup END
-set cin
+set cindent
+set smartindent
 
+"Autocomplete
 ab #i #include
 ab #d #define
+"ab std std::
 ab ( ()
 ab [ []
 ab { {}
