@@ -13,7 +13,6 @@ function! StatuslineGit()
 	else
 		return ''
 	endif
-	"return strlen(l:branchname) > 0?' '.l:branchname.' ':''
 endfunction
 
 set laststatus=2
