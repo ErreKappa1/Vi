@@ -26,6 +26,8 @@ if has('gui_running')
 	set guifont=Hack\ 11
 	map <C-Tab> gt
 	map <C-S-Tab> gT
+else
+	source ~/.vim/statusline.vim
 endif
 
 "Project settings (Mostly based on C projects)
@@ -54,5 +56,3 @@ nnoremap <F12> :! ~/Coding/Bash/randomScript/vimPush.sh<cr>
 	"CmdLin	mode
 	"PendOp mode
 
-"Addons
-"source ~/.vim/statusline.vim
