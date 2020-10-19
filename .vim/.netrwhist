@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/riky/.vim'
+let g:netrw_dirhist_1='/home/riky/Coding/Make_Templates/C++'
+let g:netrw_dirhist_0='/home/riky/Coding/Make_Templates'
 let g:netrw_dirhist_9='/home/riky/.vim'
 let g:netrw_dirhist_8='/home/riky/Documents/Git/ErreKappa1/PokemonShit'
 let g:netrw_dirhist_7='/home/riky/Coding/C++/HelloWorld'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_6='/home/riky/Coding/C++'
 let g:netrw_dirhist_5='/home/riky/Coding/C++/Datatipes'
 let g:netrw_dirhist_4='/home/riky/.vim/after/ftplugin'
 let g:netrw_dirhist_3='/home/riky/.vim/after'
-let g:netrw_dirhist_2='/home/riky/.vim'
-let g:netrw_dirhist_1='/home/riky/.vim/compiler'
-let g:netrw_dirhist_0='/home/riky/.vim'

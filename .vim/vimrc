@@ -43,13 +43,13 @@ nmap z<down> zok
 nmap z<up> zOj
 
 		"F keys
-nnoremap <F1> :make!<cr>
+nnoremap <F1> :make<cr>
 nnoremap <F4> :! ./gmake.sh<cr>
 nnoremap <F5> :! clear ; ./x*<cr>
 nnoremap <F9> :mksession! Vim/current.vim<cr>
 nnoremap <F10> :source Vim/current.vim<cr>
-nnoremap <F11> :! ~/Coding/Bash/randomScript/vimPull.sh<cr>
-nnoremap <F12> :! ~/Coding/Bash/randomScript/vimPush.sh<cr>
+nnoremap <F11> :! ~/Coding/Bash/Random_Script/vimPull.sh<cr>
+nnoremap <F12> :! ~/Coding/Bash/Random_Script/vimPush.sh<cr>
 	"Insert mode
 	"Visual mode
 	"Selcet	mode
