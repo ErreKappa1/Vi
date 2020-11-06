@@ -27,7 +27,7 @@ function! StatuslineGit()
 endfunction
 
 set laststatus=2
-set statusline+=%#Cursor#
+"set statusline+=%#Cursor#
 "set statusline+=%{StatuslineGit()}
 set statusline+=%<%f\ 
 set statusline+=%y
@@ -36,7 +36,7 @@ set statusline+=%r
 set statusline+=%=
 "set statusline+=%#VertSplit#
 "set statusline+=%{SetBatteryLevel(0)}
-set statusline+=%#Cursor#
+"set statusline+=%#Cursor#
 set statusline+=\ %n\ 
 set statusline+=%-12.(%l,%c%V%)\ 
 set statusline+=%P

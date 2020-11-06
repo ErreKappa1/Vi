@@ -9,8 +9,14 @@ set noexpandtab
 set colorcolumn=120
 set autoindent
 set smartindent
+set autoread
+set listchars=tab:▸\ ,trail:▫
 set incsearch
 set hlsearch
+set ignorecase
+set smartcase
+set history=200
+set showcmd
 highlight ColorColumn ctermbg=lightgray
 set mouse=a
 
@@ -30,9 +36,8 @@ else
 	source ~/.vim/statusline.vim
 endif
 
-"Project settings (Mostly based on C projects)
-
-"Addedd packages
+"Added packages
+"added
 packadd termdebug
 
 "Bindings
@@ -42,15 +47,21 @@ nnoremap zO O<esc>
 nmap z<down> zok
 nmap z<up> zOj
 
+
 		"F keys
 nnoremap <F1> :make<cr>
 nnoremap <F4> :! ./gmake.sh<cr>
 nnoremap <F5> :! clear ; ./x*<cr>
+nnoremap <F6> :cprevious<cr>
+nnoremap <F7> :cnext<cr>
+nnoremap <F8> :Termdebug<cr>
 nnoremap <F9> :mksession! Vim/current.vim<cr>
 nnoremap <F10> :source Vim/current.vim<cr>
 nnoremap <F11> :! ~/Coding/Bash/Random_Script/vimPull.sh<cr>
 nnoremap <F12> :! ~/Coding/Bash/Random_Script/vimPush.sh<cr>
 	"Insert mode
+imap <F6> <ESC>:cprevious<cr>a
+imap <F7> <ESC>:cnext<cr>a
 	"Visual mode
 	"Selcet	mode
 	"CmdLin	mode

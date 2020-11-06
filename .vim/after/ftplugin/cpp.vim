@@ -13,7 +13,3 @@ set smartindent
 "Autocomplete
 ab #i #include
 ab #d #define
-"ab std std::
-ab ( ()
-ab [ []
-ab { {}

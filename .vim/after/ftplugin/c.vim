@@ -11,6 +11,3 @@ set cin
 
 ab #i #include
 ab #d #define
-ab ( ()
-ab [ []
-ab { {}
