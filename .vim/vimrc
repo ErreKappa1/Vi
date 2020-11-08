@@ -33,7 +33,7 @@ if has('gui_running')
 	map <C-Tab> gt
 	map <C-S-Tab> gT
 else
-	source ~/.vim/statusline.vim
+	source ~/.vim/plugins/statusline.vim
 endif
 
 "Added packages
@@ -46,10 +46,12 @@ nnoremap zo o<esc>
 nnoremap zO O<esc>
 nmap z<down> zok
 nmap z<up> zOj
+nnoremap <left> :bprev<cr>
+nnoremap <right> :bnext<cr>
 
 
 		"F keys
-nnoremap <F1> :make<cr>
+nnoremap <F1> :w<cr> :make<cr>
 nnoremap <F4> :! ./gmake.sh<cr>
 nnoremap <F5> :! clear ; ./x*<cr>
 nnoremap <F6> :cprevious<cr>
