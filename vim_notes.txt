@@ -38,6 +38,8 @@ Movement
 		w			to the beginning of the next WORD
 		E			to the end of the next WORD
 		e			to the end of the next WORD
+		T[char]		to the char before the next occurence [char] in the row
+		t[char]		to the char after the next occurence [char] in the row
 		{			to the previous paragraph
 		}			to the next paragraph
 		G			to the end of the file
@@ -96,7 +98,7 @@ Commands
 		c			delete the selected portion of the row and toggle insert mode
 		V			toggle visual mode and select the entire row
 		v			toggle visual mode
-		m			set a marker (it can be accessed using "``")
+		m[letter]	set a marker (it can be accessed using "``", "'[letter]", "'[letter]")
 		<			unindent																					*
 		>			indnt																						*
 		.			repeat the last command
