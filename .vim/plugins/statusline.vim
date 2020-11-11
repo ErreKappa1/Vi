@@ -20,24 +20,25 @@ endfunction
 function! StatuslineGit()
 	let l:branchName = GitBranchFind()
 	if strlen(l:branchName) > 0
-		return ' '.l:branchName.' '
+		return ' '.l:branchName
 	else
-		return ' '
+		return ''
 	endif
 endfunction
 
 set laststatus=2
-"set statusline+=%#Cursor#
-"set statusline+=%{StatuslineGit()}
+set statusline+=%#Visual#
+set statusline+=%{StatuslineGit()}
+set statusline+=%#StatusLine#
+set statusline+=\ 
 set statusline+=%<%f\ 
 set statusline+=%y
 set statusline+=%m
 set statusline+=%r
 set statusline+=%=
-"set statusline+=%#VertSplit#
 "set statusline+=%{SetBatteryLevel(0)}
-"set statusline+=%#Cursor#
 set statusline+=\ %n\ 
+set statusline+=%#StatusLineTermNC#
 set statusline+=%-12.(%l,%c%V%)\ 
 set statusline+=%P
 

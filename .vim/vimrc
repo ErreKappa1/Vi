@@ -23,8 +23,11 @@ set mouse=a
 "Set runtime path and vimrc path
 let $RTP=split(&runtimepath, ',')[0]
 let $RC="$HOME/.vim/vimrc"
-	"Also set the current project path as default
-	set path =.,**
+"Also set the current project path as default
+set path =.,**
+
+"Set other variables
+let $COLORS="/usr/share/vim/vim82/syntax/hitest.vim"
 
 "GUI Settings
 if has('gui_running')
