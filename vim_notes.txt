@@ -21,7 +21,7 @@ Modes
 
 
 
-Movement
+Navigation
 
 		``			return to the previous cursor position where he was before the last jump
 		#			to the previous maching WORD (sequence of chars without spaces)
@@ -197,6 +197,17 @@ Search and Substitute
 				I	don't case sensitive
 
 
+Buffer
+
+	General
+
+		:e nomefile	open a new buffer, editing the file
+
+	Navigation
+
+		:bnext		switch to the next active buffer
+		:bprevious	switch to the previous active buffer
+
 
 Split
 
@@ -212,7 +223,7 @@ Split
 		:resize [+-][nRow]			resize a splitted panel by the selected number of row
 		:vertical resize [+-][nRow]	resize a vertical splitted panel by the selected number of row
 
-	Movement
+	Navigation
 
 		ctrl+w+h	go left to the next splitted region
 		ctrl+w+j	go down to the next splitted region
@@ -223,7 +234,7 @@ Split
 
 Tabs
 
-	vim -p file1 file2 file3		(from text interface) open the N files into N different tabs
+	vim -p file1 file2 file3		(from commandline) open the N files into N different tabs
 
 	Creation/Managment
 
