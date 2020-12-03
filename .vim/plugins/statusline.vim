@@ -37,7 +37,9 @@ set statusline+=%m
 set statusline+=%r
 set statusline+=%=
 "set statusline+=%{SetBatteryLevel(0)}
-set statusline+=\ %n\ 
+set statusline+=%#MatchParen#
+set statusline+=\ 
+set statusline+=%n\ 
 set statusline+=%#StatusLineTermNC#
 set statusline+=%-12.(%l,%c%V%)\ 
 set statusline+=%P

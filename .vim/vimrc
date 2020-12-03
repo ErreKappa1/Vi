@@ -19,6 +19,7 @@ set history=200
 set showcmd
 highlight ColorColumn ctermbg=lightgray
 set mouse=a
+set hidden
 
 "Set runtime path and vimrc path
 let $RTP=split(&runtimepath, ',')[0]
@@ -51,19 +52,23 @@ nmap z<down> zok
 nmap z<up> zOj
 nnoremap <left> :bprev<cr>
 nnoremap <right> :bnext<cr>
+nnoremap <space>h :bprev<cr>
+nnoremap <space>l :bnext<cr>
+nnoremap <space>s :s/
 
 
 		"F keys
-nnoremap <F1> :w<cr> :make<cr>
-nnoremap <F4> :! ./gmake.sh<cr>
-nnoremap <F5> :! clear ; ./x*<cr>
-nnoremap <F6> :cprevious<cr>
-nnoremap <F7> :cnext<cr>
-nnoremap <F8> :Termdebug<cr>
-nnoremap <F9> :mksession! Vim/current.vim<cr>
-nnoremap <F10> :source Vim/current.vim<cr>
-nnoremap <F11> :! ~/Coding/Bash/Random_Script/vimPull.sh<cr>
-nnoremap <F12> :! ~/Coding/Bash/Random_Script/vimPush.sh<cr>
+map <F1> :wa<cr> :!clear <cr> :make<cr>
+map <F3> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
+map <F4> :wa<cr> :!clear ; make<cr>
+map <F5> :! clear ; ./x*<cr>
+map <F6> :cprevious<cr>
+map <F7> :cnext<cr>
+map <F8> :Termdebug<cr>
+map <F9> :mksession! Vim/current.vim<cr>
+map <F10> :source Vim/current.vim<cr>
+map <F11> :! ~/Coding/Bash/Random_Script/vimPull.sh<cr>
+map <F12> :! ~/Coding/Bash/Random_Script/vimPush.sh<cr>
 	"Insert mode
 imap <F6> <ESC>:cprevious<cr>a
 imap <F7> <ESC>:cnext<cr>a

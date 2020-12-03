@@ -167,9 +167,9 @@ Saving, exit and so on (ex mode or command line)
 
 Search and Substitute
 
-		:Range s/Pattern/String/Option
+		:[range] s/Pattern/String/Option
 
-			Range (manage where the command will apply)
+			[range] (manage where the command will apply)
 
 				number		absolute number of the row
 				.			current line
@@ -196,6 +196,19 @@ Search and Substitute
 				i	ignore case
 				I	don't case sensitive
 
+
+Include-search
+
+	General
+
+		[i			Display the first line that contains the keyword under the cursor. Starting from the beginning of the file
+		]i			Display the first line that contains the keyword under the cursor. Starting from the current position
+		[I			Display all the lines  that contains the keyword under the cursor. Starting from the beginning of the file
+		]I			Display all the lines  that contains the keyword under the cursor. Starting from the current position
+		[ CTRL-i
+
+		:[range]is/Pattern/		Like ]i and [i but search only in [range]
+		:[range]il/Pattern/		Like ]I and [I but search only in [range]
 
 Buffer
 
