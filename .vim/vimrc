@@ -55,6 +55,7 @@ nnoremap <right> :bnext<cr>
 nnoremap <space>h :bprev<cr>
 nnoremap <space>l :bnext<cr>
 nnoremap <space>s :s/
+nnoremap <space>r :redraw!<cr>
 
 
 		"F keys
@@ -67,12 +68,13 @@ map <F7> :cnext<cr>
 map <F8> :Termdebug<cr>
 map <F9> :mksession! Vim/current.vim<cr>
 map <F10> :source Vim/current.vim<cr>
-map <F11> :! ~/Coding/Bash/Random_Script/vimPull.sh<cr>
-map <F12> :! ~/Coding/Bash/Random_Script/vimPush.sh<cr>
+map <F11> :! git pull<cr>
+map <F12> :!  git add .; git commit -m "Auto push, minor changes"; git push<cr>
 	"Insert mode
 imap <F6> <ESC>:cprevious<cr>a
 imap <F7> <ESC>:cnext<cr>a
 	"Visual mode
+xnoremap <silent> P p:call setreg('"', getreg('0'), getregtype('0'))<cr>
 	"Selcet	mode
 	"CmdLin	mode
 	"PendOp mode
