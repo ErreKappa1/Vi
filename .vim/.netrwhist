@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/riky/.vim'
 let g:netrw_dirhist_7='/home/riky/Documents/Git/ErreKappa1/MakeTemplate/Make_Templates/C++'
 let g:netrw_dirhist_6='/home/riky/Documents/Git/ErreKappa1/MakeTemplate/Make_Templates'
 let g:netrw_dirhist_5='/home/riky/Documents/Git/ErreKappa1/MakeTemplate/Make_Templates/C++'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_2='/home/riky/Documents/ITS_ICT/Lezioni/Fondamenti_Di_Progra
 let g:netrw_dirhist_1='/home/riky/Coding/Make_Templates/C++'
 let g:netrw_dirhist_0='/home/riky/Desktop/Sorting'
 let g:netrw_dirhist_9='/home/riky/Coding/Bash/Random_Script'
-let g:netrw_dirhist_8='/home/riky/Coding/Bash'
