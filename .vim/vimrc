@@ -7,6 +7,10 @@ set softtabstop=4
 set shiftwidth=4
 set noexpandtab
 set colorcolumn=120
+set tw=119
+highlight ColorColumn ctermbg=lightgray
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 set autoindent
 set smartindent
 set autoread
@@ -17,7 +21,6 @@ set ignorecase
 set smartcase
 set history=200
 set showcmd
-highlight ColorColumn ctermbg=lightgray
 set mouse=a
 set hidden
 
