@@ -11,6 +11,8 @@ set tw=120
 highlight ColorColumn ctermbg=lightgray
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%121v.\+/
+set wrap
+set textwidth=121
 set autoindent
 set smartindent
 set autoread
