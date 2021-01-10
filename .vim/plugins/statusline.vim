@@ -1,6 +1,7 @@
 "Statusline
 
 let s:batteryLevel = ''
+let s:whoAmI = system("whoami| tr -d '\n'")
 
 function! SetBatteryLevel(timer_id)
   let l:batteryLevel = system('acpi | grep -oP "(\d+)%" | tr -d "\n"')
@@ -20,13 +21,22 @@ endfunction
 function! StatuslineGit()
 	let l:branchName = GitBranchFind()
 	if strlen(l:branchName) > 0
-		return ' '.l:branchName
+		return ' '.l:branchName.' '
 	else
 		return ''
 	endif
 endfunction
 
+function! ImmaRoot()
+	return  '#'.' '
+endfunction
+
 set laststatus=2
+if ( s:whoAmI == 'root' )
+	set statusline+=%#ErrorMsg#
+	set statusline+=\ 
+	set statusline+=%{ImmaRoot()}
+endif
 set statusline+=%#Visual#
 set statusline+=%{StatuslineGit()}
 set statusline+=%#StatusLine#
