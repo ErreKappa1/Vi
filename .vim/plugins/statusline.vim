@@ -2,6 +2,7 @@
 
 let s:batteryLevel = ''
 let s:whoAmI = system("whoami| tr -d '\n'")
+let s:term = system("echo $TERM | tr -d '\n'")
 
 function! SetBatteryLevel(timer_id)
   let l:batteryLevel = system('acpi | grep -oP "(\d+)%" | tr -d "\n"')
@@ -28,7 +29,7 @@ function! StatuslineGit()
 endfunction
 
 function! ImmaRoot()
-	return  '#'.' '
+	return  'Editing as '.s:whoAmI.' '
 endfunction
 
 set laststatus=2
@@ -46,7 +47,11 @@ set statusline+=%y
 set statusline+=%m
 set statusline+=%r
 set statusline+=%=
-"set statusline+=%{SetBatteryLevel(0)}
+if ( s:term == 'linux' )
+	set statusline+=\ 
+	set statusline+=%{SetBatteryLevel(0)}
+	set statusline+=\ 
+endif
 set statusline+=%#MatchParen#
 set statusline+=\ 
 set statusline+=%n\ 
