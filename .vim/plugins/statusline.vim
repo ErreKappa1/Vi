@@ -1,6 +1,7 @@
 "Statusline
 
 let s:batteryLevel = ''
+let s:hour = system("date '+%I:%M' | tr -d '\n'")
 let s:whoAmI = system("whoami| tr -d '\n'")
 let s:term = system("echo $TERM | tr -d '\n'")
 
@@ -32,6 +33,10 @@ function! ImmaRoot()
 	return  'Editing as '.s:whoAmI.' '
 endfunction
 
+function! SetHour()
+	return s:hour
+endfunction
+
 set laststatus=2
 if ( s:whoAmI == 'root' )
 	set statusline+=%#ErrorMsg#
@@ -48,6 +53,8 @@ set statusline+=%m
 set statusline+=%r
 set statusline+=%=
 if ( s:term == 'linux' )
+	set statusline+=\ 
+	set statusline+=%{SetHour()}
 	set statusline+=\ 
 	set statusline+=%{SetBatteryLevel(0)}
 	set statusline+=\ 
