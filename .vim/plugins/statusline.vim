@@ -9,14 +9,13 @@ function! SetBatteryLevel(timer_id)
   let l:batteryLevel = system('acpi | grep -oP "(\d+)%" | tr -d "\n"')
   if (l:batteryLevel != '')
     let s:batteryLevel = l:batteryLevel
-    redraw!
   endif
   call timer_start(100000, 'SetBatteryLevel')
   return s:batteryLevel
 endfunction
 
 function! GitBranchFind()
-	let l:branchName = system("git rev-parse –-abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+	let l:branchName = system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
 	return l:branchName
 endfunction
 
