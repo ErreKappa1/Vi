@@ -22,7 +22,7 @@ endfunction
 function! StatuslineGit()
 	let l:branchName = GitBranchFind()
 	if strlen(l:branchName) > 0
-		return ' '.l:branchName.' '
+		return l:branchName.' '
 	else
 		return ''
 	endif
@@ -43,7 +43,10 @@ if ( s:whoAmI == 'root' )
 	set statusline+=%{ImmaRoot()}
 endif
 set statusline+=%#Visual#
-set statusline+=%{StatuslineGit()}
+if ( !StatuslineGit() )
+	set statusline+=\ 
+	set statusline+=%{StatuslineGit()}
+endif
 set statusline+=%#StatusLine#
 set statusline+=\ 
 set statusline+=%<%f\ 
