@@ -79,8 +79,9 @@ map <F12> :!  git add .; git commit -m "Auto push, minor changes"; git push<cr>
 imap <F6> <ESC>:cprevious<cr>a
 imap <F7> <ESC>:cnext<cr>a
 	"Visual mode
-xnoremap <silent> P p:call setreg('"', getreg('0'), getregtype('0'))<cr>
+"xnoremap <silent> P p:call setreg('"', getreg('0'), getregtype('0'))<cr>
 	"Selcet	mode
 	"CmdLin	mode
 	"PendOp mode
 
+redraw!
