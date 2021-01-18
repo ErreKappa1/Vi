@@ -84,4 +84,3 @@ imap <F7> <ESC>:cnext<cr>a
 	"CmdLin	mode
 	"PendOp mode
 
-redraw!
