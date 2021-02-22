@@ -1,6 +1,7 @@
 "Generic settigns
 syntax on
 filetype plugin indent on
+filetype plugin on
 set number
 set tabstop=4
 set softtabstop=4
@@ -25,6 +26,10 @@ set history=200
 set showcmd
 set mouse=a
 set hidden
+set scrolloff=5
+set ttyfast
+set wildmenu
+set omnifunc=syntaxcomplete#Complete
 
 "Set runtime path and vimrc path
 let $RTP=split(&runtimepath, ',')[0]
