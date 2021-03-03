@@ -66,6 +66,8 @@ nnoremap <space>h :bprev<cr>
 nnoremap <space>l :bnext<cr>
 nnoremap <space>s :s/
 nnoremap <space>r :redraw!<cr>
+nnoremap <space>c :copen<cr>
+nnoremap <space>C :ccl<cr>
 nnoremap <space><space> :wa<cr> :!clear <cr> :make<cr>
 
 
