@@ -7,9 +7,9 @@ set tw=80
 highlight ColorColumn ctermbg=lightgray
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
-unmap <F1>
-unmap <F4>
-unmap <F5>
-unmap <F8>
+"unmap <F1>
+"unmap <F4>
+"unmap <F5>
+"unmap <F8>
 
 map <F5> :! bash %<cr>

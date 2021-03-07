@@ -5,3 +5,5 @@
 
 set list
 set listchars=tab:▸\ ,trail:▫
+highlight Comments ctermbg=yellow ctermfg=white guibg=#FFFF00
+match Comments M//\>M
