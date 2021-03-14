@@ -9,15 +9,14 @@ set shiftwidth=4
 set noexpandtab
 set colorcolumn=120
 set tw=120
-highlight ColorColumn ctermbg=lightgray
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+highlight ColorColumn ctermbg=lightgray ctermfg=black
+highlight OverLength ctermbg=red ctermfg=white
 match OverLength /\%121v.\+/
 set wrap
 set textwidth=121
 set autoindent
 set smartindent
 set autoread
-set listchars=tab:▸\ ,trail:▫
 set incsearch
 set hlsearch
 set ignorecase
@@ -62,33 +61,33 @@ nmap z<down> zok
 nmap z<up> zOj
 nnoremap <left> gT<cr>
 nnoremap <right> gt<cr>
-nnoremap <space>h :bprev<cr>
-nnoremap <space>l :bnext<cr>
-nnoremap <space>s :s/
-nnoremap <space>r :redraw!<cr>
-nnoremap <space>c :copen<cr>
-nnoremap <space>C :ccl<cr>
-nnoremap <space><space> :wa<cr> :!clear <cr> :make<cr>
+nnoremap <silent> <space>h :bprev<cr>
+nnoremap <silent> <space>l :bnext<cr>
+nnoremap <silent> <space>s :s/
+nnoremap <silent> <space>r :redraw!<cr>
+nnoremap <silent> <space>c :copen<cr>
+nnoremap <silent> <space>C :ccl<cr>
+nnoremap <silent> <space><space> :wa<cr> :!clear <cr> :make<cr>
 
 
 		"F keys
-map <F1> :wa<cr> :!clear <cr> :make<cr>
+map <F1> <silent> :wa<cr> :!clear <cr> :make<cr>
 map <F3> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 map <F4> :wa<cr> :!clear ; make<cr>
 map <F5> :! clear ; ./x*<cr>
-map <F6> :cprevious<cr>
-map <F7> :cnext<cr>
+map <F6> <silent> :cprevious<cr>
+map <F7> <silent> :cnext<cr>
 map <F8> :Termdebug<cr>
 map <F9> :mksession! Vim/current.vim<cr>
-map <F10> :source Vim/current.vim<cr>
+map <F10> <silent> :source Vim/current.vim<cr>
 map <F11> :! clear; git pull<cr>
 map <F12> :! clear; git add .; git commit -m "Auto push, minor changes"; git push<cr>
 	"Insert mode
-imap <F6> <ESC>:cprevious<cr>a
-imap <F7> <ESC>:cnext<cr>a
+imap <F6> <silent> <ESC>:cprevious<cr>a
+imap <F7> <silent> <ESC>:cnext<cr>a
 	"Visual mode
 xnoremap <silent> P p:call setreg('"', getreg('0'), getregtype('0'))<cr>
 	"Selcet	mode
 	"CmdLin	mode
 	"PendOp mode
-
+	
