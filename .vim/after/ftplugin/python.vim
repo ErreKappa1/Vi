@@ -9,7 +9,7 @@ setlocal colorcolumn=80
 setlocal path=.,**
 
 "Hella of a regex to add pattern to the include search
-set include=^\\s*\\(from\|import)\\s*\\zs\\(\\S\\+\\s\\{-}\\)*\\ze\\($\\\| as\\)
+"set include=^\\s*\\(from\|import)\\s*\\zs\\(\\S\\+\\s\\{-}\\)*\\ze\\($\\\| as\\)
 function! PyInclude(fname)
 	let parts = split(a:fname, ' import ')
 	let l = parts[0]
@@ -25,4 +25,7 @@ function! PyInclude(fname)
 	return substitute(l, '\.', '/', 'g') . '.py'
 endfunction
 setlocal includeexpr=PyInclude(v:fname)
-setlocal deinfe=^\\s*\\<\\(def\\\|class\\)\\>
+"setlocal deinfe=^\\s*\\<\\(def\\\|class\\)\\>
+setlocal define=^\\s*\\<\\(def\\\|class\\)\\>
+
+map <F5> :! clear; python %<cr>
