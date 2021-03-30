@@ -25,7 +25,7 @@ set history=200
 set showcmd
 set mouse=a
 set hidden
-set scrolloff=5
+set scrolloff=3
 set ttyfast
 set wildmenu
 set omnifunc=syntaxcomplete#Complete
@@ -85,7 +85,7 @@ map <F12> :! clear; git add .; git commit -m "Auto push, minor changes"; git pus
 	"Insert mode
 imap <F6> <silent> <ESC>:cprevious<cr>a
 imap <F7> <silent> <ESC>:cnext<cr>a
-imap <C-B> <C-x><C-n>
+imap <C-b> <C-x><C-n>
 	"Visual mode
 xnoremap <silent> P p:call setreg('"', getreg('0'), getregtype('0'))<cr>
 	"Selcet	mode
