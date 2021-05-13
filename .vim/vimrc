@@ -29,6 +29,7 @@ set scrolloff=3
 set ttyfast
 set wildmenu
 set omnifunc=syntaxcomplete#Complete
+set visualbell
 
 "Set runtime path and vimrc path
 let $RTP=split(&runtimepath, ',')[0]
