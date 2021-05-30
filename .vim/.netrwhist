@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/riky'
+let g:netrw_dirhist_9='/home/riky/.ssh'
 let g:netrw_dirhist_8='/home/riky/.config/polybar/script'
 let g:netrw_dirhist_7='/home/riky/.config/rofi'
 let g:netrw_dirhist_6='/home/riky/.config/i3'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_4='/home/riky'
 let g:netrw_dirhist_3='/home/riky/.config/polybar'
 let g:netrw_dirhist_2='/home/riky/.config/i3'
 let g:netrw_dirhist_1='/home/riky/Coding/Bash/Random_Script/backUp'
-let g:netrw_dirhist_0='/home/riky/Desktop/Symone/Simone1'
-let g:netrw_dirhist_9='/home/riky/Desktop/Symone/Esame/Esercizio1'
