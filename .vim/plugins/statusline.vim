@@ -36,7 +36,7 @@ function! SetHour()
 	return s:hour
 endfunction
 
-set laststatus=2
+set laststatus=1
 if ( s:whoAmI == 'root' )
 	set statusline+=%#ErrorMsg#
 	set statusline+=\ 
