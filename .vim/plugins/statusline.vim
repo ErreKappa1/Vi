@@ -42,11 +42,11 @@ if ( s:whoAmI == 'root' )
 	set statusline+=\ 
 	set statusline+=%{ImmaRoot()}
 endif
-set statusline+=%#Visual#
-if ( !StatuslineGit() )
-	set statusline+=\ 
-	set statusline+=%{StatuslineGit()}
-endif
+"set statusline+=%#Visual#
+"if ( !StatuslineGit() )
+"	set statusline+=\ 
+"	set statusline+=%{StatuslineGit()}
+"endif
 set statusline+=%#StatusLine#
 set statusline+=\ 
 set statusline+=%<%f\ 
