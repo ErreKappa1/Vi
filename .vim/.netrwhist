@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/riky/Documents/Git/Clown-Fiesta-ICT/MiscDocs'
+let g:netrw_dirhist_7='/home/riky/Documents/Git/Clown-Fiesta-ICT'
+let g:netrw_dirhist_6='/home/riky/Documents/Git'
+let g:netrw_dirhist_5='/home/riky/Documents'
 let g:netrw_dirhist_4='/etc/apt/sources.list.d'
 let g:netrw_dirhist_3='/etc/apt/preferences.d'
 let g:netrw_dirhist_2='/etc/apt/auth.conf.d'
 let g:netrw_dirhist_1='/etc/apt/apt.conf.d'
 let g:netrw_dirhist_0='/home/riky/Music'
 let g:netrw_dirhist_9='/home/riky/Games'
-let g:netrw_dirhist_8='/home/riky/Downloads'
-let g:netrw_dirhist_7='/home/riky/Documents'
-let g:netrw_dirhist_6='/home/riky/Desktop'
-let g:netrw_dirhist_5='/home/riky/Coding'
