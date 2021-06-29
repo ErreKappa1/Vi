@@ -52,6 +52,10 @@ else
 	source ~/.vim/plugins/statusline.vim
 endif
 
+"Pdf management
+command! -complete=file -nargs=1 pdftotext :r !pdftotext -nopgbrk <q-args> -
+command! -complete=file -nargs=1 pdftotext :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
+
 "Added packages
 packadd termdebug
 
