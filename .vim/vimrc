@@ -31,6 +31,7 @@ set wildmenu
 set omnifunc=syntaxcomplete#Complete
 set visualbell
 set background=dark
+set showmatch
 
 "Set runtime path and vimrc path
 let $RTP=split(&runtimepath, ',')[0]
