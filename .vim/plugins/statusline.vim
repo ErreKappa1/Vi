@@ -36,7 +36,11 @@ function! SetHour()
 	return s:hour
 endfunction
 
-set laststatus=1
+if ( s:term == 'linux' )
+	set laststatus=2
+else
+	set laststatus=1
+endif
 if ( s:whoAmI == 'root' )
 	set statusline+=%#ErrorMsg#
 	set statusline+=\ 

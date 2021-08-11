@@ -76,9 +76,8 @@ nnoremap <silent> <space>s :s/
 nnoremap <silent> <space>r :redraw!<cr>
 nnoremap <silent> <space>c :copen<cr>
 nnoremap <silent> <space>C :ccl<cr>
+nnoremap <silent> <space>g :! clear ; ./x*<cr>
 nnoremap <silent> <space><space> :wa<cr> :!clear <cr> :make<cr>
-
-
 		"F keys
 map <F1> <silent> :wa<cr> :!clear <cr> :make<cr>
 map <F3> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
@@ -91,14 +90,19 @@ map <F9> :mksession! Vim/current.vim<cr>
 map <F10> <silent> :source Vim/current.vim<cr>
 map <F11> :! clear; git pull<cr>
 map <F12> :! clear; git add .; git commit -m "Auto push, minor changes"; git push<cr>
+
 	"Insert mode
 imap <F6> <silent> <ESC>:cprevious<cr>a
 imap <F7> <silent> <ESC>:cnext<cr>a
 imap <C-b> <C-x><C-n>
 imap <C-BS> <C-w>
+
 	"Visual mode
 xnoremap <silent> P p:call setreg('"', getreg('0'), getregtype('0'))<cr>
+
 	"Selcet	mode
+
 	"CmdLin	mode
+
 	"PendOp mode
-	
+
