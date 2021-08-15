@@ -65,7 +65,7 @@ if ( s:term == 'linux' )
 	set statusline+=%{SetBatteryLevel(0)}
 	set statusline+=\ 
 endif
-set statusline+=%#MatchParen#
+set statusline+=%#SpellCap#
 set statusline+=\ 
 set statusline+=%n\ 
 set statusline+=%#StatusLineTermNC#
