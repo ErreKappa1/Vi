@@ -64,8 +64,8 @@ packadd termdebug
 
 "Bindings
 	"Normal mode
-nnoremap zo o<esc>
-nnoremap zO O<esc>
+"nnoremap zo o<esc>
+"nnoremap zO O<esc>
 nmap z<down> zok
 nmap z<up> zOj
 nnoremap <left> gT<cr>
