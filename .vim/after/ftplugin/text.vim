@@ -6,4 +6,4 @@
 set list
 set listchars=tab:▸\ ,trail:▫
 highlight Comments ctermbg=yellow ctermfg=black guibg=#FFFF00
-match Comments M//.*M
+match Comments M////.*M
