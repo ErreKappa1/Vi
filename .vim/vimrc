@@ -35,6 +35,9 @@ set visualbell
 set background=dark
 set showmatch
 
+let g:livepreview_previewer = 'atril'
+autocmd Filetype tex setl updatetime=1
+
 "Set runtime path and vimrc path
 let $RTP=split(&runtimepath, ',')[0]
 let $RC="$HOME/.vim/vimrc"
@@ -52,7 +55,7 @@ if has('gui_running')
 	map <C-Tab> gt
 	map <C-S-Tab> gT
 else
-	source ~/.vim/plugins/statusline.vim
+	source ~/.vim/plugin/statusline.vim
 endif
 
 "Pdf management
