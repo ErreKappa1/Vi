@@ -55,7 +55,7 @@ if has('gui_running')
 	map <C-Tab> gt
 	map <C-S-Tab> gT
 else
-	source ~/.vim/plugin/statusline.vim
+	source ~/.vim/statusline/statusline.vim
 endif
 
 "Pdf management
