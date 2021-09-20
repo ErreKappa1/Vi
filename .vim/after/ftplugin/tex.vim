@@ -13,4 +13,5 @@ map <F4> :wa<cr> :!clear ; pdflatex % <cr>
 map <F5> :LLPStartPreview <cr>
 
 "show indentation levels in a convenient way
-:set list lcs=tab:\|\ 
+set list
+set list lcs=tab:\|\ 
