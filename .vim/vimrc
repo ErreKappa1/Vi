@@ -35,7 +35,7 @@ set visualbell
 set background=dark
 set showmatch
 
-let g:livepreview_previewer = 'atril'
+let g:livepreview_previewer = 'mupdf'
 autocmd Filetype tex setl updatetime=1
 
 "Set runtime path and vimrc path

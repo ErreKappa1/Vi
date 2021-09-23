@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/riky/.vim'
 let g:netrw_dirhist_5='/home/riky/Coding/Bash'
 let g:netrw_dirhist_4='/home/riky/Coding/Bash/Random_Script'
 let g:netrw_dirhist_3='/home/riky/.config/rofi/launchers/text/styles'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_0='/home/riky/Desktop/ProvaFileJson'
 let g:netrw_dirhist_9='/home/riky/Documents/Git/Benzina'
 let g:netrw_dirhist_8='/home'
 let g:netrw_dirhist_7='/home/riky'
-let g:netrw_dirhist_6='/home/riky/Coding/Cpp/RangeBasedFor'
