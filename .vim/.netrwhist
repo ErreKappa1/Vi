@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/riky/Coding/Bash/Random_Script'
 let g:netrw_dirhist_7='/home/riky/.config/polybar'
 let g:netrw_dirhist_6='/home/riky/.vim'
 let g:netrw_dirhist_5='/home/riky/Coding/Bash'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_2='/etc/pacman.d'
 let g:netrw_dirhist_1='/home/riky/Coding/Cpp/Constructor'
 let g:netrw_dirhist_0='/home/riky/Desktop/ProvaFileJson'
 let g:netrw_dirhist_9='/home/riky/Documents/Git/Benzina'
-let g:netrw_dirhist_8='/home'
