@@ -31,7 +31,7 @@ set scrolloff=3
 set ttyfast
 set wildmenu
 set omnifunc=syntaxcomplete#Complete
-set visualbell
+"set visualbell
 set background=dark
 set showmatch
 

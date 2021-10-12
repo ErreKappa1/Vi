@@ -8,6 +8,7 @@ augroup project
 	autocmd BufRead,BufNewFile *.h,*.c set filetype=c
 augroup END
 set cin
+set foldmethod=indent
 
 ab #i #include
 ab #d #define
