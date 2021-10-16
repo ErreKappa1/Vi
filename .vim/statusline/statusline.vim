@@ -69,6 +69,7 @@ set statusline+=%#SpellCap#
 set statusline+=\ 
 set statusline+=%n\ 
 set statusline+=%#StatusLineTermNC#
+set statusline+=\ 
 set statusline+=%-12.(%l,%c%V%)\ 
 set statusline+=%P
 
