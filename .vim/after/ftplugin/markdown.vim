@@ -13,3 +13,11 @@ map <silent> <space><space> :wa<cr> :!pandoc --from markdown+pipe_tables --listi
 "show indentation levels in a convenient way
 set list
 set list lcs=tab:\|\ 
+
+"add a timestamp using <c-g> t
+function! InsertTimeStamp()
+   call complete(col('.'), [strftime("%Y-%m-%d"), strftime("%Y-%m-%dT%H:%M"), strftime("%d. %B %Y"), strftime("%H:%M")])
+   return ''
+endfunction
+
+inoremap <C-g>t <C-R>=InsertTimeStamp()<CR>
