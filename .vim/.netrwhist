@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/mnt/GNU/home/riky/.config/i3'
 let g:netrw_dirhist_1='/home/riky/Documents/ITS_Cybersecurity/.git'
 let g:netrw_dirhist_0='/home/riky/Documents/ITS_Cybersecurity/.git/refs'
 let g:netrw_dirhist_9='/home/riky/Documents/ITS_Cybersecurity/.git'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_6='/home/riky/Documents/ITS_Cybersecurity/.git/objects'
 let g:netrw_dirhist_5='/home/riky/Documents/ITS_Cybersecurity/.git/objects/00'
 let g:netrw_dirhist_4='/home/riky/Documents/ITS_Cybersecurity/.git/objects'
 let g:netrw_dirhist_3='/home/riky/Documents/ITS_Cybersecurity/.git'
-let g:netrw_dirhist_2='/home/riky/Documents/ITS_Cybersecurity/.git/info'
