@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/riky/Desktop/CareerDay/TechSystem'
+let g:netrw_dirhist_3='/home/riky/Documents/ITS_Cybersecurity/Tirocinio_Erasmsus/Erasmus/Domande_Da_Fare'
 let g:netrw_dirhist_2='/mnt/GNU/home/riky/.config/i3'
 let g:netrw_dirhist_1='/home/riky/Documents/ITS_Cybersecurity/.git'
 let g:netrw_dirhist_0='/home/riky/Documents/ITS_Cybersecurity/.git/refs'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_8='/home/riky/Documents/ITS_Cybersecurity/.git/objects'
 let g:netrw_dirhist_7='/home/riky/Documents/ITS_Cybersecurity/.git/objects/00'
 let g:netrw_dirhist_6='/home/riky/Documents/ITS_Cybersecurity/.git/objects'
 let g:netrw_dirhist_5='/home/riky/Documents/ITS_Cybersecurity/.git/objects/00'
-let g:netrw_dirhist_4='/home/riky/Documents/ITS_Cybersecurity/.git/objects'
-let g:netrw_dirhist_3='/home/riky/Documents/ITS_Cybersecurity/.git'
