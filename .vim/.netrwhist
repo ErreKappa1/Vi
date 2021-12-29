@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/etc/apt/sources.list.d'
+let g:netrw_dirhist_9='/etc/apt'
+let g:netrw_dirhist_8='/etc/apt/sources.list.d'
 let g:netrw_dirhist_7='/home/riky/Documents/Git/ErreKappa1/Managementthings'
 let g:netrw_dirhist_6='/home/riky/Documents/Git/ErreKappa1/Dotfiles'
 let g:netrw_dirhist_5='/home/riky/Coding/Bash/Random_Script/backUp'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_4='/home/riky/Desktop/CareerDay/TechSystem'
 let g:netrw_dirhist_3='/home/riky/Documents/ITS_Cybersecurity/Tirocinio_Erasmsus/Erasmus/Domande_Da_Fare'
 let g:netrw_dirhist_2='/mnt/GNU/home/riky/.config/i3'
 let g:netrw_dirhist_1='/home/riky/Documents/ITS_Cybersecurity/.git'
-let g:netrw_dirhist_0='/home/riky/Documents/ITS_Cybersecurity/.git/refs'
-let g:netrw_dirhist_9='/home/riky/Documents/ITS_Cybersecurity/.git'
-let g:netrw_dirhist_8='/home/riky/Documents/ITS_Cybersecurity/.git/objects'
