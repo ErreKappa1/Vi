@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/riky/Coding/Cpp/Strings'
 let g:netrw_dirhist_1='/home/riky/Documents/Git/Cloud-Fiesta/Random_Script/dockerNopCommerce'
 let g:netrw_dirhist_0='/etc/apt/sources.list.d'
 let g:netrw_dirhist_9='/etc/apt'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_6='/home/riky/Documents/Git/ErreKappa1/Dotfiles'
 let g:netrw_dirhist_5='/home/riky/Coding/Bash/Random_Script/backUp'
 let g:netrw_dirhist_4='/home/riky/Desktop/CareerDay/TechSystem'
 let g:netrw_dirhist_3='/home/riky/Documents/ITS_Cybersecurity/Tirocinio_Erasmsus/Erasmus/Domande_Da_Fare'
-let g:netrw_dirhist_2='/mnt/GNU/home/riky/.config/i3'
