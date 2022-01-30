@@ -15,7 +15,7 @@ highlight Comments ctermbg=yellow ctermfg=black
 match OverLength /\%121v.\+/
 match Comments M////.*M
 set wrap
-set textwidth=121
+set textwidth=120
 set autoindent
 set smartindent
 set autoread
