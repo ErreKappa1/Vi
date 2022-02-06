@@ -73,6 +73,7 @@ nmap z<down> zok
 nmap z<up> zOj
 nnoremap <left> gT<cr>
 nnoremap <right> gt<cr>
+nnoremap Y y$
 nnoremap <silent> <space>h :bprev<cr>
 nnoremap <silent> <space>l :bnext<cr>
 nnoremap <silent> <space>s :s/
