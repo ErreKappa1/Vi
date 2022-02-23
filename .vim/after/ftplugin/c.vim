@@ -11,8 +11,8 @@ set cin
 set foldmethod=manual
 set colorcolumn=100
 set tw=100
-highlight ColorCulumn ctermbg=lightgray cterm=black
-highlight OverLenght ctermbg=red cterm=white
+highlight ColorCulumn ctermbg=lightgray ctermfg=black
+highlight OverLenght ctermbg=red ctermfg=white
 match OverLength /\%101v.\+/
 set textwidth=100
 
