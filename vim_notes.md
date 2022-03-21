@@ -113,7 +113,7 @@ ctrl+y | linde down
 ctrl+v | visual block
 ctrl+O | go back (this applies to buffers, tag and so on)
 
-:show | show the current mode
+`:show` | show the current mode
 
 ## Regex
 
@@ -153,15 +153,15 @@ ctrl+O | go back (this applies to buffers, tag and so on)
 
 ## Saving, exit and so on (ex mode or command line)
 
-- :wa - writes all changes to the respective files
-- :xa - save all files and then quit
-- :wqa - same as before
-- :qa - quit all (fails if there's any unsaved file)
-- :qa! - quit all (forced)
-- :n - edit the alternate file
-- :e [file/number] - edit the selected file / edit the alternate file corresponding to the number
-- :! [shell cmd] - redirect the command to the shell, displayng the output
-- :!r [shell cmd] - redirect the command to the shell, writing the output on the file
+- `:wa` - writes all changes to the respective files
+- `:xa` - save all files and then quit
+- `:wqa` - same as before
+- `:qa` - quit all (fails if there's any unsaved file)
+- `:qa!` - quit all (forced)
+- `:n` - edit the alternate file
+- `:e [file/number]` - edit the selected file / edit the alternate file corresponding to the number
+- `:! [shell cmd]` - redirect the command to the shell, displayng the output
+- `:!r [shell cmd]` - redirect the command to the shell, writing the output on the file
 
 
 ## Search and Substitute
@@ -196,41 +196,41 @@ NB: A range can be specified by a sequence of two parameters divided by a comma 
 
 ## General
 
-- \[i - Display the first line that contains the keyword under the cursor. Starting from the beginning of the file
-- \]i - Display the first line that contains the keyword under the cursor. Starting from the current position
-- \[I - Display all the lines  that contains the keyword under the cursor. Starting from the beginning of the file
-- \]I - Display all the lines  that contains the keyword under the cursor. Starting from the current position
-- \\\[ CTRL-i
+- `\[i` - Display the first line that contains the keyword under the cursor. Starting from the beginning of the file
+- `\]i` - Display the first line that contains the keyword under the cursor. Starting from the current position
+- `\[I` - Display all the lines  that contains the keyword under the cursor. Starting from the beginning of the file
+- `\]I` - Display all the lines  that contains the keyword under the cursor. Starting from the current position
+- `\\\[` CTRL-i
 
-- :[range]is/Pattern/	Like \\\]i and \\\[i but search only in [range]
-- :[range]il/Pattern/	Like \\\]I and \\\[I but search only in [range]
+- `:[range]is/Pattern/`	Like \\\]i and \\\[i but search only in [range]
+- `:[range]il/Pattern/`	Like \\\]I and \\\[I but search only in [range]
 
 # Buffers
 
 ## General
 
-- :e nomefile	open a new buffer, editing the file
+- `:e nomefile`	open a new buffer, editing the file
 
 ## Navigation
 
-- :bnext - switch to the next active buffer
-- :bprevious - switch to the previous active buffer
-- :bdelete - delete the current buffer, if it's the last one, close the session
+- `:bnext` - switch to the next active buffer
+- `:bprevious` - switch to the previous active buffer
+- `:bdelete` - delete the current buffer, if it's the last one, close the session
 
 
 # Split
 
 ## General
 
-- :split - split the tab horizzontally with the selected file, use the same file if no argument is given
-- :vsplit - split the tab vertically with the selected file, use the same file if no argument is given
+- `:split` - split the tab horizzontally with the selected file, use the same file if no argument is given
+- `:vsplit` - split the tab vertically with the selected file, use the same file if no argument is given
 
 ## Resize
 
-- :resize [nRow] - resize a splitted panel to the selected number of row
-- :vertical resize [nRow] - resize a vertical splitted panel to the selected number of row
-- :resize [+-][nRow] - resize a splitted panel by the selected number of row
-- :vertical resize [+-][nRow] - resize a vertical splitted panel by the selected number of row
+- `:resize [nRow]` - resize a splitted panel to the selected number of row
+- `:vertical resize [nRow]` - resize a vertical splitted panel to the selected number of row
+- `:resize [+-][nRow]` - resize a splitted panel by the selected number of row
+- `:vertical resize [+-][nRow]` - resize a vertical splitted panel by the selected number of row
 
 ## Navigation
 
@@ -243,32 +243,32 @@ NB: A range can be specified by a sequence of two parameters divided by a comma 
 
 # Tabs
 
-	vim -p file1 file2 file3	(from commandline) open the N files into N different tabs
+`vim -p file1 file2 file3`	(from commandline) open the N files into N different tabs
 
 ## Creation/Managment
 
-- :tabedit [file] - edit specified file in a new tab
-- :tabfind [file] - open a new tab with filename given, searching the 'path' to find it
-- :tabclose - close current tab
-- :tabclose [i] - close i-th tab
-- :tabonly - close all other tabs (show only the current tab)
+- `:tabedit [file]` - edit specified file in a new tab
+- `:tabfind [file]` - open a new tab with filename given, searching the 'path' to find it
+- `:tabclose` - close current tab
+- `:tabclose [i]` - close i-th tab
+- `:tabonly` - close all other tabs (show only the current tab)
 
-- :tab ball - show each buffer in a tab (up to 'tabpagemax' tabs)
-- :tab help - open a new help window in its own tab page
-- :tab drop [file] - open {file} in a new tab, or jump to a window/tab containing the file if there is one
-- :tab split - copy the current window to a new tab of its own
+- `:tab ball` - show each buffer in a tab (up to 'tabpagemax' tabs)
+- `:tab help` - open a new help window in its own tab page
+- `:tab drop [file]` - open {file} in a new tab, or jump to a window/tab containing the file if there is one
+- `:tab split` - copy the current window to a new tab of its own
 
 ## Moving tabs around
 
-- :tabs - list all tabs including their displayed windows
-- :tabm 0 - move current tab to first
-- :tabm - move current tab to last
-- :tabm [i] - move current tab to position i+1
+- `:tabs` - list all tabs including their displayed windows
+- `:tabm 0` - move current tab to first
+- `:tabm` - move current tab to last
+- `:tabm [i]` - move current tab to position i+1
 
-- :tabn - go to next tab
-- :tabp - go to previous tab
-- :tabfirst - go to first tab
-- :tablast - go to last tab
+- `:tabn` - go to next tab
+- `:tabp` - go to previous tab
+- `:tabfirst` - go to first tab
+- `:tablast` - go to last tab
 
 ## Navigation
 
@@ -310,22 +310,22 @@ Just write a script using Vi's scripting language and save it as a .vim file
 
 Mapping macro | Meaning
 --- | ---
-:map | recursive binding, every mode find more using :help recursive_mapping
-:nmap | recursive binding, normal mode
-:imap | recursive binding, insert mode
-:vmap | recursive binding, visual and select mode
-:xmap | recursive binding, visual mode
-:smap | recursive binding, select mode
-:cmap | recursive binding, cmdLin mode
-:omap | recursive binding, pendOp mode
-:noremap | non-recursive binding, every mode
-:nnoremap | non-recursive binding, normal mode
-:inoremap | non-recursive binding, insert mode
-:vnoremap | non-recursive binding, visual and select mode
-:xnoremap | non-recursive binding, visual mode
-:snoremap | non-recursive binding, select mode
-:cnoremap | non-recursive binding, cmdLin mode
-:onoremap | non-recursive binding, pendOp mode
+`:map` | recursive binding, every mode find more using :help recursive_mapping
+`:nmap` | recursive binding, normal mode
+`:imap` | recursive binding, insert mode
+`:vmap` | recursive binding, visual and select mode
+`:xmap` | recursive binding, visual mode
+`:smap` | recursive binding, select mode
+`:cmap` | recursive binding, cmdLin mode
+`:omap` | recursive binding, pendOp mode
+`:noremap` | non-recursive binding, every mode
+`:nnoremap` | non-recursive binding, normal mode
+`:inoremap` | non-recursive binding, insert mode
+`:vnoremap` | non-recursive binding, visual and select mode
+`:xnoremap` | non-recursive binding, visual mode
+`:snoremap` | non-recursive binding, select mode
+`:cnoremap` | non-recursive binding, cmdLin mode
+`:onoremap` | non-recursive binding, pendOp mode
 
 ## Attribute
 
