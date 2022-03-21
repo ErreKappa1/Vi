@@ -4,19 +4,19 @@
 ## Modes
 
 The "Vi's modes" is the key feature of Vi, if you're using Vim or other derivative the current mode is indicated into
-the lower-left corner of the terminal.  Pressing ESCAPE from every mode exept NORMAL will cause the return to NORMAL
-mode, is the only way to exit from INSERT mode 
+the lower-left corner of the terminal. Pressing ESCAPE from every mode exept **NORMAL** will cause the return to NORMAL
+mode, is the only way to exit from **INSERT** mode 
 
 
-1. NORMAL - The standard mode, here you can navigate trought the text and use commands
+1. **NORMAL** - The standard mode, here you can navigate trought the text and use commands
 
-2. INSERT - The insert mode, you can toggle it using a variety of different metods, used for actual typing
+2. **INSERT** - The insert mode, you can toggle it using a variety of different metods, used for actual typing
 
-3. VISUAL - The visual mode, permit text selection, useful for multi-line action like yank or cut
+3. **VISUAL** - The visual mode, permit text selection, useful for multi-line action like yank or cut
 
-4. REPLACE - The replace mode, permit to overwrite text
+4. **REPLACE** - The replace mode, permit to overwrite text
 
-5. EX - The ex mode, you can type vim :commands to do a variety of things
+5. **EX** - The ex mode, you can type vim :commands to do a variety of things
 
 
 
@@ -24,94 +24,94 @@ mode, is the only way to exit from INSERT mode
 
 Command | Action
 --- | ---
-\`\` | return to the previous cursor position where he was before the last jump
-\# | to the previous maching WORD (sequence of chars without spaces)
-\$ | to the end of a row
-\% | to the next maching char
-\^ | to the first not-blank char of a row
-\* | to the next maching WORD
-\( | to the previous sentence
-\) | to the next sentence
-0 | to the first character of a row (spaces, tabs)
-\- | to the previous line
-\+ | to the next line
-W | to the beginning of the next WORD
-w | to the beginning of the next WORD
-E | to the end of the next WORD
-e | to the end of the next WORD
-T[char] | to the char before the next occurence [char] in the row
-t[char] | to the char after the next occurence [char] in the row
-\{ | to the previous paragraph
-\} | to the next paragraph
-G | to the end of the file
-gg | to the beginning of the file
-gf | open file under the cursor
-H | to the top of the screen
-h | left
-j | down
-k | up
-L | to the bottom of the screen
-l | right
-\'\' | return to the previous line where the cursor was before the last jump
-\'\. | return to the beginning (excluding spaces and tabs) of the last edited line
-B | backword till next space
-b | to the beginning of the current word
-N | to the previous WORD (find)
-n | to the next WORD (find)
-M | to the middle of the screen
-\? | find the previous WORD
-\/ | find the next WORD
+`\`\`` | return to the previous cursor position where he was before the last jump
+`\#` | to the previous maching **WORD** (sequence of chars without spaces)
+`\$` | to the end of a row
+`\%` | to the next maching char
+`\^` | to the first not-blank char of a row
+`\*` | to the next maching **WORD**
+`\(` | to the previous sentence
+`\)` | to the next sentence
+`0` | to the first character of a row (spaces, tabs)
+`\-` | to the previous line
+`\+` | to the next line
+`W` | to the beginning of the next **WORD**
+`w` | to the beginning of the next **WORD**
+`E` | to the end of the next **WORD**
+`e` | to the end of the next **WORD**
+`T[char]` | to the char before the next occurence [char] in the row
+`t[char]` | to the char after the next occurence [char] in the row
+`\{` | to the previous paragraph
+`\}` | to the next paragraph
+`G` | to the end of the file
+`gg` | to the beginning of the file
+`gf` | open file under the cursor
+`H` | to the top of the screen
+`h` | left
+`j` | down
+`k` | up
+`L` | to the bottom of the screen
+`l` | right
+`\'\'` | return to the previous line where the cursor was before the last jump
+`\'\.` | return to the beginning (excluding spaces and tabs) of the last edited line
+`B` | backword till next space
+`b` | to the beginning of the current word
+`N` | to the previous **WORD** (find)
+`n` | to the next **WORD** (find)
+`M` | to the middle of the screen
+`\?` | find the previous **WORD**
+`\/` | find the next **WORD**
 
 
 ## Commands
 
 Command | Action
 --- | ---
-\~ | invert the case of the current char
-\@ | play recorded macro
-\= | auto indent
-Q | ex mode
-q | record a new macro
-R | toggle replace mode
-r | replace the current char
-Y | yank line
-y | yank
-UU | undo the undo command
-U | undo command
-u | undo
-I | toggle insert mode at the beginning of the row
-i | toggle insert mode
-O | create a new line over the selected one and toggle insert mode
-o | create a new line below the selected one and toggle insert mode
-P | paste before
-p | paste after
-A | append at the end of the row and toggle insert mode
-a | append one char right and toggle insert mode
-S | erase the current row and toggle insert mode one tab after the beginning of the line
-s | erase the current char and toggle insert mode
-D | cut single char
-d | cut selected
-J | join the current row with the nexto one
-K | display the help for the selected WORD
-\: | toggle the ex command line
-c | cut selected and then toggle insert mode
-X | delete one char on the left
-x | delete one char on the right
-C | delete the current row from the current char to the last and toggle insert mode
-c | delete the selected portion of the row and toggle insert mode
-V | toggle visual mode and select the entire row
-v | toggle visual mode
-m[letter] | set a marker (it can be accessed using "``", "'[letter]", "'[letter]")
-\\\< | unindent
-\\\> | indnt
-\. | repeat the last command
-ctrl+r | redo
-ctrl+f | page up
-ctrl+b | page down
-ctrl+e | line up
-ctrl+y | linde down
-ctrl+v | visual block
-ctrl+O | go back (this applies to buffers, tag and so on)
+`\~` | invert the case of the current char
+`\@` | play recorded macro
+`\=` | auto indent
+`Q` | ex mode
+`q` | record a new macro
+`R` | toggle replace mode
+`r` | replace the current char
+`Y` | yank line
+`y` | yank
+`UU` | undo the undo command
+`U` | undo command
+`u` | undo
+`I` | toggle insert mode at the beginning of the row
+`i` | toggle insert mode
+`O` | create a new line over the selected one and toggle insert mode
+`o` | create a new line below the selected one and toggle insert mode
+`P` | paste before
+`p` | paste after
+`A` | append at the end of the row and toggle insert mode
+`a` | append one char right and toggle insert mode
+`S` | erase the current row and toggle insert mode one tab after the beginning of the line
+`s` | erase the current char and toggle insert mode
+`D` | cut single char
+`d` | cut selected
+`J` | join the current row with the nexto one
+`K` | display the help for the selected **WORD**
+`\:` | toggle the ex command line
+`c` | cut selected and then toggle insert mode
+`X` | delete one char on the left
+`x` | delete one char on the right
+`C` | delete the current row from the current char to the last and toggle insert mode
+`c` | delete the selected portion of the row and toggle insert mode
+`V` | toggle visual mode and select the entire row
+`v` | toggle visual mode
+`m[letter]` | set a marker (it can be accessed using "``", "'[letter]", "'[letter]")
+`\\\<` | unindent
+`\\\>` | indnt
+`\.` | repeat the last command
+`ctrl+r` | redo
+`ctrl+f` | page up
+`ctrl+b` | page down
+`ctrl+e` | line up
+`ctrl+y` | linde down
+`ctrl+v` | visual block
+`ctrl+O` | go back (this applies to buffers, tag and so on)
 
 `:show` | show the current mode
 
@@ -119,36 +119,36 @@ ctrl+O | go back (this applies to buffers, tag and so on)
 
 ### General
 
-- pattern - just the pattern, even if is only a portion of a bigger string
-- pattern (with spaces) - the pattern isolated from the rest of the text
-- \$ - last char of a row
-- \^ - first char of a row
-- \\\< \\\> - an indefinite number of chars
-- [] - any char from the group between the two brackets
-- \. - any char except newline
+- `pattern` - just the pattern, even if is only a portion of a bigger string
+- `pattern (with spaces)` - the pattern isolated from the rest of the text
+- `\$` - last char of a row
+- `\^` - first char of a row
+- `\\\< \\\>` - an indefinite number of chars
+- `[]` - any char from the group between the two brackets
+- `\.` - any char except newline
 
 ### Escaped
 
-- \\s - whitespace
-- \\S - non-whitespace
-- \\d - digit
-- \\D - non-digit
-- \\x - hex digit
-- \\X - non-hex digit
-- \\o - octal digit
-- \\O - non-octal digit
-- \\h - head of word (a,b,c...,A,B,C,...,_)
-- \\H - non-head of word
-- \\p - printable chars
-- \\P - printable chars excluding digits
-- \\w - word char
-- \\W - non-word character
-- \\a - alphabetic char
-- \\A - non-alphabetic char
-- \\l - lowercase char
-- \\L - non-lowercase char
-- \\u - uppercase char
-- \\U - non-uppercase char
+- `\\s` - whitespace
+- `\\S` - non-whitespace
+- `\\d` - digit
+- `\\D` - non-digit
+- `\\x` - hex digit
+- `\\X` - non-hex digit
+- `\\o` - octal digit
+- `\\O` - non-octal digit
+- `\\h` - head of word (a,b,c...,A,B,C,...,_)
+- `\\H` - non-head of word
+- `\\p` - printable chars
+- `\\P` - printable chars excluding digits
+- `\\w` - word char
+- `\\W` - non-word character
+- `\\a` - alphabetic char
+- `\\A` - non-alphabetic char
+- `\\l` - lowercase char
+- `\\L` - non-lowercase char
+- `\\u` - uppercase char
+- `\\U` - non-uppercase char
 
 
 ## Saving, exit and so on (ex mode or command line)
@@ -170,13 +170,13 @@ ctrl+O | go back (this applies to buffers, tag and so on)
 
 - [range] **manage where the command will apply**
 
-1. number - absolute number of the row
-2. \. - current line
-3. \$ - the last line in the  file
-4. \% - the whole file
-5. \\/ - the next line where the last searched pattern was
-6. \\? - the previously line where the last searched pattern was
-7. \\& - the next line where the last substituted pattern was
+1. `number` - absolute number of the row
+2. `\.` - current line
+3. `\$` - the last line in the  file
+4. `\%` - the whole file
+5. `\\/` - the next line where the last searched pattern was
+6. `\\?` - the previously line where the last searched pattern was
+7. `\\&` - the next line where the last substituted pattern was
 
 NB: A range can be specified by a sequence of two parameters divided by a comma (Es 1,4 .,$)
 
@@ -186,10 +186,10 @@ NB: A range can be specified by a sequence of two parameters divided by a comma 
 
 - Option
 
-1. c - confirm before each substitution
-2. g - replace multiple occurrences of PATTERN per line (else it replace only the first)
-3. i - ignore case
-4. I - don't case sensitive
+1. `c` - confirm before each substitution
+2. `g` - replace multiple occurrences of PATTERN per line (else it replace only the first)
+3. `i` - ignore case
+4. `I` - don't case sensitive
 
 
 # Include-search
@@ -234,11 +234,11 @@ NB: A range can be specified by a sequence of two parameters divided by a comma 
 
 ## Navigation
 
-- ctrl+w+h - go left to the next splitted region
-- ctrl+w+j - go down to the next splitted region
-- ctrl+w+k - go up to the next splitted region
-- ctrl+w+l - go right to the next splitted region
-- ctrl+ww - cycle trought the different splitted regions
+- `ctrl+w+h` - go left to the next splitted region
+- `ctrl+w+j` - go down to the next splitted region
+- `ctrl+w+k` - go up to the next splitted region
+- `ctrl+w+l` - go right to the next splitted region
+- `ctrl+ww` - cycle trought the different splitted regions
 
 
 # Tabs
@@ -272,11 +272,11 @@ NB: A range can be specified by a sequence of two parameters divided by a comma 
 
 ## Navigation
 
-- gt - go to next tab
-- gT - go to previous tab
-- [i]gt - go to tab in position i
-- ctrl+PgDn - go to next tab
-- ctrl+PgUp - go to previous tab
+- `gt` - go to next tab
+- `gT` - go to previous tab
+- `[i]gt` - go to tab in position i
+- `ctrl+PgDn` - go to next tab
+- `ctrl+PgUp` - go to previous tab
 
 NB: tabe==tabedit, if the typed string is univoce works as the maching command
 
@@ -285,11 +285,11 @@ NB: tabe==tabedit, if the typed string is univoce works as the maching command
 
 ## Creation
 
-- :mksession [path/to/file.vim]	create a vim script that contains the current session
+- `:mksession [path/to/file.vim]`	create a vim script that contains the current session
 
 ## Load
 
-- :source [path/to/file.vim]	load a Vim script that contains the sessions data
+- :source `[path/to/file.vim]`	load a Vim script that contains the sessions data
 
 
 # Scripting
@@ -300,7 +300,7 @@ Just write a script using Vi's scripting language and save it as a .vim file
 
 ## Run
 
-- :source [path/to/file.vim]	run a Vim script
+- `:source [path/to/file.vim]`	run a Vim script
 
 # Mapping
 
