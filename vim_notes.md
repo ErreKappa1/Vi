@@ -74,7 +74,7 @@ Command | Action
 `q` | record a new macro
 `R` | toggle replace mode
 `r` | replace the current char
-`Y` | yank line
+`yy` | yank line
 `y` | yank
 `UU` | undo the undo command
 `U` | undo command
