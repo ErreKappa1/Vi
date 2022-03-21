@@ -25,20 +25,20 @@ mode, is the only way to exit from **INSERT** mode
 Command | Action
 --- | ---
 `\`\`` | return to the previous cursor position where he was before the last jump
-`\#` | to the previous maching **WORD** (sequence of chars without spaces)
+`\#` | to the previous maching *WORD* (sequence of chars without spaces)
 `\$` | to the end of a row
 `\%` | to the next maching char
 `\^` | to the first not-blank char of a row
-`\*` | to the next maching **WORD**
+`\*` | to the next maching *WORD*
 `\(` | to the previous sentence
 `\)` | to the next sentence
 `0` | to the first character of a row (spaces, tabs)
 `\-` | to the previous line
 `\+` | to the next line
-`W` | to the beginning of the next **WORD**
-`w` | to the beginning of the next **WORD**
-`E` | to the end of the next **WORD**
-`e` | to the end of the next **WORD**
+`W` | to the beginning of the next *WORD*
+`w` | to the beginning of the next *WORD*
+`E` | to the end of the next *WORD*
+`e` | to the end of the next *WORD*
 `T[char]` | to the char before the next occurence [char] in the row
 `t[char]` | to the char after the next occurence [char] in the row
 `\{` | to the previous paragraph
@@ -55,12 +55,12 @@ Command | Action
 `\'\'` | return to the previous line where the cursor was before the last jump
 `\'\.` | return to the beginning (excluding spaces and tabs) of the last edited line
 `B` | backword till next space
-`b` | to the beginning of the current word
-`N` | to the previous **WORD** (find)
-`n` | to the next **WORD** (find)
+`b` | to the beginning of the current *WORD*
+`N` | to the previous *WORD* (find)
+`n` | to the next *WORD* (find)
 `M` | to the middle of the screen
-`\?` | find the previous **WORD**
-`\/` | find the next **WORD**
+`\?` | find the previous *WORD*
+`\/` | find the next *WORD*
 
 
 ## Commands
@@ -92,7 +92,7 @@ Command | Action
 `D` | cut single char
 `d` | cut selected
 `J` | join the current row with the nexto one
-`K` | display the help for the selected **WORD**
+`K` | display the help for the selected *WORD*
 `\:` | toggle the ex command line
 `c` | cut selected and then toggle insert mode
 `X` | delete one char on the left
@@ -137,12 +137,12 @@ Command | Action
 - `\\X` - non-hex digit
 - `\\o` - octal digit
 - `\\O` - non-octal digit
-- `\\h` - head of word (a,b,c...,A,B,C,...,_)
-- `\\H` - non-head of word
+- `\\h` - head of *WORD* (a,b,c...,A,B,C,...,_)
+- `\\H` - non-head of *WORD*
 - `\\p` - printable chars
 - `\\P` - printable chars excluding digits
-- `\\w` - word char
-- `\\W` - non-word character
+- `\\w` - *WORD* char
+- `\\W` - non-*WORD* character
 - `\\a` - alphabetic char
 - `\\A` - non-alphabetic char
 - `\\l` - lowercase char
@@ -187,7 +187,7 @@ NB: A range can be specified by a sequence of two parameters divided by a comma 
 - Option
 
 1. `c` - confirm before each substitution
-2. `g` - replace multiple occurrences of PATTERN per line (else it replace only the first)
+2. `g` - replace multiple occurrences of *pattern* per line (else it replace only the first)
 3. `i` - ignore case
 4. `I` - don't case sensitive
 
@@ -200,7 +200,7 @@ NB: A range can be specified by a sequence of two parameters divided by a comma 
 - `\]i` - Display the first line that contains the keyword under the cursor. Starting from the current position
 - `\[I` - Display all the lines  that contains the keyword under the cursor. Starting from the beginning of the file
 - `\]I` - Display all the lines  that contains the keyword under the cursor. Starting from the current position
-- `\\\[` CTRL-i
+- `\\\[ CTRL-i`
 
 - `:[range]is/Pattern/`	Like \\\]i and \\\[i but search only in [range]
 - `:[range]il/Pattern/`	Like \\\]I and \\\[I but search only in [range]
