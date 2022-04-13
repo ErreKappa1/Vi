@@ -18,3 +18,4 @@ set textwidth=100
 
 ab #i #include
 ab #d #define
+imap <C-D> if (DEBUG)<cr>printf("");<ESC>2hi

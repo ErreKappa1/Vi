@@ -73,5 +73,3 @@ set statusline+=\
 set statusline+=%-12.(%l,%c%V%)\ 
 set statusline+=%P
 
-"set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
-
