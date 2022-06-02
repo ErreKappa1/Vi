@@ -82,6 +82,7 @@ nnoremap <silent> <space>c :copen<cr>
 nnoremap <silent> <space>C :ccl<cr>
 nnoremap <silent> <space>g :! clear ; ./x*<cr>
 nnoremap <silent> <space><space> :wa<cr> :!clear <cr> :make<cr>
+nnoremap co :%s///gn<cr>
 		"F keys
 map <F1> <silent> :wa<cr> :!clear <cr> :make<cr>
 map <F3> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
