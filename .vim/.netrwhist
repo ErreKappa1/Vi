@@ -1,12 +1,23 @@
 let g:netrw_dirhistmax  =10
+<<<<<<< HEAD
 let g:netrw_dirhistcnt =6
 let g:netrw_dirhist_6='/home/riky/Documents/Git/ErreKappa1/Dotfiles'
 let g:netrw_dirhist_5='/home/riky/Desktop/Test'
 let g:netrw_dirhist_4='/home/riky/Desktop'
 let g:netrw_dirhist_3='/home/riky/Desktop/Test'
+=======
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/riky/.ssh'
+let g:netrw_dirhist_3='/home/riky/.config/rofi'
+>>>>>>> 1be897b545ec6dca8c0f7b0c84be0f01b3109a7d
 let g:netrw_dirhist_2='/home/riky/Coding/Cpp/Strings'
 let g:netrw_dirhist_1='/home/riky/Desktop/DocumentazioneAPFiera'
 let g:netrw_dirhist_0='/home/riky/Documents/Other/Curriculum'
 let g:netrw_dirhist_9='/home'
 let g:netrw_dirhist_8='/home/riky/Documents/Other/Curriculum'
 let g:netrw_dirhist_7='/home/riky/.config/GitHub Desktop'
+<<<<<<< HEAD
+=======
+let g:netrw_dirhist_6='/home/riky/.config'
+let g:netrw_dirhist_5='/home/riky/.config/gnome-session'
+>>>>>>> 1be897b545ec6dca8c0f7b0c84be0f01b3109a7d
