@@ -25,7 +25,6 @@ set hlsearch
 set smartcase
 set history=200
 set showcmd
-set mouse=a
 set hidden
 set scrolloff=3
 set ttyfast
