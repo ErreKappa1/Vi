@@ -21,7 +21,7 @@ set smartindent
 set autoread
 set incsearch
 set hlsearch
-"set ignorecase
+set ignorecase
 set smartcase
 set history=200
 set showcmd
