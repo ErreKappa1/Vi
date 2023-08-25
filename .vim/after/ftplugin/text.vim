@@ -7,3 +7,7 @@ set list
 set listchars=tab:▸\ ,trail:▫
 highlight Comments ctermbg=yellow ctermfg=black guibg=#FFFF00
 match Comments M////.*M
+
+"set text error highlights
+setlocal spell spelllang=en_us
+setlocal spell spelllang+=it

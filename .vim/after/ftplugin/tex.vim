@@ -17,3 +17,7 @@ map <silent> <space>p :LLPStartPreview <cr>
 "show indentation levels in a convenient way
 set list
 set list lcs=tab:\|\ 
+
+"set text error highlights
+setlocal spell spelllang=en_us
+setlocal spell spelllang+=it

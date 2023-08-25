@@ -21,3 +21,7 @@ function! InsertTimeStamp()
 endfunction
 
 inoremap <C-g>t <C-R>=InsertTimeStamp()<CR>
+
+"set text error highlights
+setlocal spell spelllang=en_us
+setlocal spell spelllang+=it
