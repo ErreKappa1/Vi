@@ -100,6 +100,7 @@ imap <F6> <silent> <ESC>:cprevious<cr>a
 imap <F7> <silent> <ESC>:cnext<cr>a
 imap <C-b> <C-x><C-n>
 imap <C-BS> <C-w>
+inoremap <C-L> <C-G>u<Esc>[s1z=`]a<C-G>u
 
 	"Visual mode
 xnoremap <silent> P p:call setreg('"', getreg('0'), getregtype('0'))<cr>
