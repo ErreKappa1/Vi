@@ -50,7 +50,7 @@ let $COLORS="/usr/share/vim/vim82/syntax/hitest.vim"
 if has('gui_running')
 	set lines=30 columns=130
 	colorscheme slate
-	set guifont=Hack\ 11
+	"set guifont=Hack\ 11
 	map <C-Tab> gt
 	map <C-S-Tab> gT
 else
