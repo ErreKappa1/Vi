@@ -37,6 +37,16 @@ set showmatch
 let g:livepreview_previewer = 'mupdf'
 autocmd Filetype tex setl updatetime=1
 
+"Set split with local file if terminal is large enough
+function! Base(...)
+  let l:topic = a:0 ? a:1 : ''
+  if winwidth('%') >= 160 " Minimum width
+    execute 'vertical Lexplore' l:topic
+    execute 'vertical resize 60'
+  endif
+endfunction
+command! -complete=help -nargs=? B call Base(<f-args>)
+
 "Set runtime path and vimrc path
 let $RTP=split(&runtimepath, ',')[0]
 let $RC="$HOME/.vim/vimrc"
